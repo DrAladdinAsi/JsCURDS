@@ -1,0 +1,115 @@
+:root {
+	--dark_color : #000;
+	--little_light_black:#111;
+    --light_black: #222;
+    --light_text_color:#fff;
+    --cherry-red-color :#D2042D;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: system-ui;
+	background: var(--light_black);
+	color: var(--light_text_color);
+}
+
+.curd {
+	width: 80%;
+	margin: auto;
+}
+
+.curdHead {
+	text-align: center;
+	text-transform: uppercase;
+    margin: 4px 0;
+}
+
+input {
+	width: 100%;
+	height: 1.2rem;
+	background: var(--little_light_black) ;
+	color:var(--light_text_color);
+	border: none;
+	outline: none;
+	margin: 10px 0;
+	padding:6px;
+    border-radius:4px;
+}
+
+input:focus {
+	transform: scale(1.05);
+    background: var(--dark_color);
+}
+
+
+.curdInputs {
+	width: 100%;
+}
+
+.priceInputs input{
+  width: 20%;
+  margin: 0 2px;
+}
+
+.total {
+
+	background:var(--cherry-red-color);
+	padding: 3px;
+	border-radius: 3px;
+	margin-top: 3px;
+}
+
+.total:before {
+	content: 'Total:';
+}
+
+button {
+	margin: .5rem 0;
+	width: 100%;
+
+	color: var(--light_text_color);
+	background: purple;
+	border:none;
+	outline: none;
+	border-radius:6px ;
+	padding: 4px;
+	cursor: pointer;
+}
+
+button:hover {
+	border:1px blue solid;
+}
+
+.searchInputs {
+	width: 100%;
+}
+
+.searchButtons{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.searchButtons button {
+	width: 40%;
+}
+
+.tableShow {
+	width: 100%;
+	margin: 2rem 0;
+}
+
+table {
+	width: 100%;
+	text-align: center;
+}
+
+table th {
+	text-transform: uppercase;
+}
+
+th ,td{
+	padding: 5px;
+}

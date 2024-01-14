@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="curd.css" />
+	<title>CURDS</title>
+</head>
+<body>
+
+   <div class="curd">
+   	  <div class="curdHead">
+   	  	<h1>curds</h1>
+   	  	<h3>product managment system</h3>
+   	  </div>
+
+   	  <div class='curdInputs'>
+   	  	 <input  type="text" id='title' placeholder="title" />
+   	  	 <div class='priceInputs'>
+   	  	 	<input onkeyup="getTotal()" type="text" id="price" placeholder="price" />
+
+   	  	 	<input onkeyup="getTotal()" type="text" id="taxes" placeholder="taxes" />
+
+   	  	 	<input onkeyup="getTotal()" type="text" id="ads" placeholder="ads" />
+
+   	  	 	<input onkeyup="getTotal()" type="text" id="discount" placeholder="discount" />
+             
+             <small class="total" id='total'></small>
+             
+   	  	 </div>
+  
+            <input type="text" id="count" placeholder="count" />
+   	  	 	<input type="text" id="category" placeholder="category" />
+
+             <button class="btnCreate" id="btnCreate">Create</button>
+   	  </div>
+
+     <div class="searchInputs">
+     	<input onkeyup="serchForItems(this.value)" type="text" id="searchInput" placeholder="search" />
+
+     	<div class="searchButtons">
+     		<button onclick="changeSearchMood(this.id)" id='search_by_title'>Search By Title</button>
+     		<button onclick="changeSearchMood(this.id)" id='search_by_category'>Search By Category</button>
+
+     	</div>
+     </div>
+
+     <div id='deleteAll'></div>
+
+     <div class="tableShow">
+     	<table>
+     		<tr>
+     			<th>id</th>
+     			<th>title</th>
+     			<th>price</th>
+     			<th>ads</th>
+     			<th>discount</th>
+     			<th>total</th>
+     			<th>category</th>
+     			<th>update</th>
+     			<th>delete</th>
+     		</tr>
+         
+         <tbody id="tbody">
+     		
+         </tbody>
+     	</table>
+     </div>
+
+   </div>
+
+
+<script src="curd.js"></script>
+</body>
+</html>
